@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #ED8B00;
+    --secundary-color: #1A4674;
+    --third-color: #00A9E0;
+    --room-color: #008542;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+    --eighth-color: #a8a8a8ef;
+
+    --primary-typography: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-container: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

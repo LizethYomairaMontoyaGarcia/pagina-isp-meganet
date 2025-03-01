@@ -1,0 +1,91 @@
+{
+  "residentPlans": [
+    {
+      "id": 1,
+      "img": "",
+      "services": "Fibra Óptica",
+      "plans": 50,
+      "price": "71.400",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva a estratos superiores a 3",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    },
+    {
+      "id": 2,
+      "services": "Fibra Óptica",
+      "plans": 90,
+      "price": "100.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva a estratos superiores a 3",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    },
+    {
+      "id": 3,
+      "services": "Fibra Óptica",
+      "plans": 200,
+      "price": "150.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva a estratos superiores a 3",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    }
+  ],
+  "corporatePlan": [
+    {
+      "id": 1,
+      "services": "Fibra Óptica",
+      "plans": 30,
+      "price": "200.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva incluido",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    },
+    {
+      "id": 2,
+      "services": "Fibra Óptica",
+      "plans": 50,
+      "price": "300.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva incluido",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    },
+    {
+      "id": 3,
+      "services": "Fibra Óptica",
+      "plans": 60,
+      "price": "350.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva incluido",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    },
+    {
+      "id": 4,
+      "services": "Fibra Óptica",
+      "plans": 100,
+      "price": "500.000",
+      "items": {
+        "item1": "Navegación Ilimitada",
+        "item2": "Instalación gratis",
+        "item3": "Iva incluido",
+        "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    }
+  ]
+}
