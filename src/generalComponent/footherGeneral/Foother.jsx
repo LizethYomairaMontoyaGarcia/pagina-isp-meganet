@@ -27,7 +27,7 @@ const Foother = () => {
 
   const handleEmailClick = () => {
     window.location.href =
-      "mailto:atelcoaltavelocidad@gmail.com?subject=Información%20de%20instalación%20del%20servicio%20de%20internet%20Atelco%20Alta%20Velocidad";
+      "mailto:Meganetaltavelocidad@gmail.com?subject=Información%20de%20instalación%20del%20servicio%20de%20internet%20Meganet%20Alta%20Velocidad";
   };
 
   const phoneNumber = "+57 3232888486";

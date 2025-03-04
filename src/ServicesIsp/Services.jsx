@@ -9,6 +9,7 @@ import {
   Section,
   Title,
   Subtitle,
+  Subtitle2,
   CardList,
   HeaderCards,
   Conta,
@@ -16,7 +17,7 @@ import {
   StyledCard,
   ButtonInfo,
   Contaprincipal,
-  ButtonClick,
+  DivAccordion,
 } from "./ServicesStyled";
 import Foother from "../generalComponent/footherGeneral/Foother";
 import ChatWhatsapp from "../generalComponent/chatWhatsapp/ChatWhatsapp";
@@ -25,8 +26,10 @@ import PuntoLinea from "../assets/img/pagoenlinea.avif";
 import plansData from "../Data/plans.json";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
-import { ButtonGeneral } from "../StyledGenerals";
+import { ButtonGeneral, ButtonGeneralPulse } from "../StyledGenerals";
 import { Helmet } from "react-helmet";
+import Accordion from "react-bootstrap/Accordion";
+import Table from "react-bootstrap/Table";
 
 const Services = () => {
   const [planType, setPlanType] = useState("residentPlans");
@@ -69,8 +72,8 @@ const Services = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Servicos | Atelco</title>
-        <link rel="canonical" href="https://atelco.net.co/Servicios" />
+        <title>Servicos | Meganet</title>
+        <link rel="canonical" href="https://meganetfibrasas.net.co/Servicios" />
         <meta name="description" content="Nuestros servicios" />
       </Helmet>
       <div>
@@ -106,7 +109,7 @@ const Services = () => {
           <div ref={internetSectionRef}>
             <Conta>
               <ButtonGeneral onClick={() => setPlanType("residentPlans")}>
-                Plan Residencial
+                strPlan Residencial
               </ButtonGeneral>
               <ButtonGeneral onClick={() => setPlanType("corporatePlan")}>
                 Plan Corporativo
@@ -115,8 +118,10 @@ const Services = () => {
 
             <Divider>
               <h2>
-                PLAN{" "}
-                {planType === "residentPlans" ? "RESIDENCIAL" : "CORPORATIVO"}
+                <strong>
+                  PLAN{" "}
+                  {planType === "residentPlans" ? "RESIDENCIAL" : "CORPORATIVO"}
+                </strong>
               </h2>
 
               <DivDivGeneralCard>
@@ -153,12 +158,79 @@ const Services = () => {
             </Divider>
           </div>
 
+          <DivAccordion>
+            <h1>
+              <strong>Tenemos más servicios para ti</strong>
+            </h1>
+            <p>
+              Te ofrecemos una variedad de servicios adicionales para que
+              encuentres todo lo que necesitas.
+            </p>
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Canal Internet dedicado</Accordion.Header>
+                <Accordion.Body>
+                  <Table striped bordered hover>
+                    <thead>
+                      <tr>
+                        <th>Velocidad</th>
+                        <th>Valor por Plan</th>
+                        <th>Instalación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>10Mb a 100Mb</td>
+                        <td>40.000 + Iva</td>
+                        <td>Segun visita técnica</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  Enlace dedicado sin internet
+                </Accordion.Header>
+                <Accordion.Body>
+                  <Table striped bordered hover>
+                    <thead>
+                      <tr>
+                        <th>Velocidad</th>
+                        <th>Valor por Plan</th>
+                        <th>Instalación</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {plansData.dedicatedChannelNotInternet.map((plan) => (
+                        <tr key={plan.id}>
+                          <td>{plan.plans}</td>
+                          <td>{plan.price} + Iva</td>
+                          <td>{plan.items.item1}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </Table>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </DivAccordion>
+
           <Section>
             <HeaderCards>
               <Title>
                 <strong>Medios de pago</strong>
               </Title>
-              <Subtitle>No dejes pasar el pago de tu factura</Subtitle>
+              <Subtitle>No dejes pasar el pago de tu factura</Subtitle> <br />
+              <Subtitle2>
+                <em>
+                  La fecha límite para realizar el pago es el día 26 de cada
+                  mes.
+                </em>
+              </Subtitle2>
             </HeaderCards>
 
             <CardList>
@@ -167,14 +239,13 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title>Punto físico</Card.Title>
                   <Card.Text>
-                    Carrera 5 Calle 7-10 Barrio unión al frente de la iglesia
-                    principal, Municipio Condoto
+                    Calle del comercio con taguera, edificio Maja, segundo piso
                   </Card.Text>
                   <ButtonGeneral
                     variant="primary"
                     onClick={() =>
                       window.open(
-                        "https://www.google.com/maps?q=5.094589, -76.646629",
+                        "https://www.google.com/maps?q=1.787420, -78.791214",
                         "_blank"
                       )
                     }
@@ -191,10 +262,10 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title>Pago en linea</Card.Title>
                   <Card.Text>
-                    Transferencia o consignación, cuenta de ahorros Bancolombia{" "}
-                    <em />
-                    <strong>36000001706</strong> a nombre de{" "}
-                    <strong>Atelco Alta Velocidad.</strong>
+                    Transferencia o consignación, cuenta corriente <em />{" "}
+                    Bancolombia
+                    <strong>89400011192</strong> a nombre de{" "}
+                    <strong>Meganet Fibra S.A.S.</strong>
                   </Card.Text>
                 </Card.Body>
               </StyledCard>
@@ -202,9 +273,9 @@ const Services = () => {
           </Section>
 
           <DivServices id="requirements">
-            <ButtonClick onClick={handleNavigateTerms}>
+            <ButtonGeneralPulse onClick={handleNavigateTerms}>
               Términos y condiciones de la prestación del servicio
-            </ButtonClick>
+            </ButtonGeneralPulse>
           </DivServices>
         </div>
         <Foother />

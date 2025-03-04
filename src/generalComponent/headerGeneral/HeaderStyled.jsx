@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   background-color: #fff;
   z-index: 1000;
-  box-shadow: 0px 5px 15px #f58634; /* Sombra con opacidad */
+  box-shadow: 0px 5px 10px #008542; /* Sombra con opacidad */
 `;
 
 export const Container = styled.div`
@@ -21,7 +21,7 @@ export const Logo = styled.h1`
   margin: 0;
   font-size: 24px;
   img {
-    width: 80px;
+    width: 160px;
   }
 `;
 
@@ -44,11 +44,11 @@ export const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: #333;
+    color: var( --sixth-color);
     transition: color 0.3s ease;
 
     &:hover {
-      color: #007bff;
+      color: var( --room-color);
     }
   }
 
@@ -68,7 +68,7 @@ export const MobileNav = styled.div`
   flex-direction: column;
   align-items: left;
   width: 90%;
-  background-color: #f8f9fa;
+  background-color: var(--fifth-color);
   position: absolute;
   top: 100%;
   right: 0;

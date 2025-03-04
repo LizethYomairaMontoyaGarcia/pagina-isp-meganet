@@ -18,13 +18,13 @@ import {
   StyledContainer,
   DivStyledContainer,
   DivAccordion,
+  ButtonGeneral,
 } from "./NormativityStyled";
 import Foother from "../generalComponent/footherGeneral/Foother";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import ChatWhatsapp from "../generalComponent/chatWhatsapp/ChatWhatsapp";
 import { Helmet } from "react-helmet";
-import { ButtonGeneral } from "../StyledGenerals";
 
 const StyledCard = styled(Card)`
   margin-bottom: 20px;
@@ -35,9 +35,9 @@ const StyledCard = styled(Card)`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.05) rotate(1deg);
-    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
-    background-color: #0681e54f;
+    transform: scale(1.02) rotate(1deg);
+
+    background-color: #07366934;
   }
 `;
 
@@ -46,8 +46,8 @@ const Normativity = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Normatividad | Atelco</title>
-        <link rel="canonical" href="https://atelco.net.co/Normatividad" />
+        <title>Normatividad | Meganet</title>
+        <link rel="canonical" href="https://meganetfibrasas.net.co/Normatividad" />
         <meta name="description" content="Normas vigentes" />
       </Helmet>
       <div>
@@ -56,7 +56,10 @@ const Normativity = () => {
         <Container>
           <Content>
             <TextWrapper>
-              <h1>CUIDEMOS DE NUESTRA RED</h1>
+              <h1>
+                {" "}
+                <strong>CUIDEMOS DE NUESTRA RED</strong>
+              </h1>
               <p>
                 En caso de detectar en la red algún tipo de amenaza que atente
                 contra su integridad y la de los suyos, comuníquese por favor
@@ -64,7 +67,10 @@ const Normativity = () => {
                 fin, donde también podrá acceder a las Líneas de Atención en
                 Prevención de la Pornografía Infantil.
               </p>
-              <h3>Autoridades de control y vigilancia</h3>
+              <h3>
+                {" "}
+                <strong>Autoridades de control y vigilancia</strong>
+              </h3>
             </TextWrapper>
             <ImageContainer>
               <StyledImageLink href="https://www.mintic.gov.co/portal/inicio/Sala-de-Prensa/Noticias/720:Internet-Sano-una-estrategia-para-proteger-la-identidad-de-ninos-y-jovenes-en-la-red">
@@ -90,7 +96,10 @@ const Normativity = () => {
         </Container>
 
         <DivStyledContainer>
-          <H2>Leyes, resoluciones y circulares</H2>
+          <H2>
+            {" "}
+            <strong>Leyes, resoluciones y circulares</strong>
+          </H2>
           <StyledContainer>
             <div className="row mx-0">
               <div className="col-lg-3 col-md-3 col-sm-3 col-12">

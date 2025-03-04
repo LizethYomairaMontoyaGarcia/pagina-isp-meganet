@@ -18,6 +18,7 @@ export const TextWrapper = styled.div`
   text-align: center;
   h1 {
     padding-bottom: 10px;
+    color: var(--secundary-color);
     font-family: var(--font-family-container);
   }
   p {
@@ -25,11 +26,13 @@ export const TextWrapper = styled.div`
     padding-left: 100px;
     padding-right: 100px;
     font-size: 1.2rem;
+    font-family: var(--font-family-container);
   }
   h3 {
     padding-bottom: 30px;
+    color: var(--secundary-color);
     font-family: var(--font-family-container);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   @media screen and (max-width: 468px) {
     h1 {
@@ -101,8 +104,8 @@ export const DivStyledContainer = styled.div`
 export const H2 = styled.h2`
   text-align: center;
   margin-top: 30px;
+  color: var(--secundary-color);
   font-family: var(--font-family-container);
-  color: var(--third-color);
   font-size: 2.3rem;
 `;
 
@@ -118,4 +121,30 @@ export const StyledContainer = styled.div`
 export const DivAccordion = styled.div`
   margin-top: 60px;
   margin-bottom: 60px;
+`;
+
+export const ButtonGeneral = styled.button`
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+  background-color: var(--fifth-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  margin: 0 2px;
+  font-family: var(--font-family-container);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font-family-container);
+  }
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--fifth-color);
+    a {
+      color: var(--fifth-color);
+    }
+  }
 `;

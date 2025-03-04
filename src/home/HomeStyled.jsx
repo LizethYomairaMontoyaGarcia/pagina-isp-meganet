@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import indexBackground from "../assets/img/home.avif";
 
 export const Img = styled.img`
   width: 100%;

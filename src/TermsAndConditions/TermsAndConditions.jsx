@@ -17,11 +17,11 @@ const TermsAndConditions = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Términos y condiciones | Atelco
+          Términos y condiciones | Meganet
         </title>
         <link
           rel="canonical"
-          href="https://atelco.net.co/TerminosyCondiciones"
+          href="https://meganetfibrasas.net.co/TerminosyCondiciones"
         />
         <meta name="description" content="Términos y condiciones" />
       </Helmet>

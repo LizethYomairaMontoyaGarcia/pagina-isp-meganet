@@ -2,8 +2,8 @@
   "coverage": [
     {
       "id": 1,
-      "municipality": "Municipio de Condoto",
-      "zones": "Municipio de Condoto y localidad de Opogodo"
+      "municipality": "Municipio de Tumaco Nariño",
+      "zones": "Municipio de Tumaco Nariño"
     }
   ],
 
@@ -11,7 +11,7 @@
     {
       "id": 1,
       "title": "Nuestra Misión",
-      "description": "Proporcionar el mejor servicio de conectividad e internet a nivel nacional, facilitando el acceso a la información por medio de redes de fibra óptica y brindar los mejores servicios de telecomunicación para facilitar el acceso a la información y comunicación a todos nuestros usuarios."
+      "description": "Brindar conectividad confiable y de alta velocidad que impulse el desarrollo de nuestra comunidad. Nos comprometemos a ofrecer un servicio de internet estable, seguro y accesible, con atención personalizada y soluciones innovadoras que mejoren la experiencia de nuestros clientes, permitiéndoles estar siempre conectados con lo que más importa"
     }
   ],
 
@@ -19,7 +19,7 @@
     {
       "id": 1,
       "title": "Nuestra Visión",
-      "description": "Para el año 2025, Meganet Fibra S.A.S. comprometida en ser una empresa líder  en telecomunicaciones, generando beneficios para la comunidad, facilitando la comunicación a nivel nacional."
+      "description": "Ser la empresa líder en la provisión de servicios de internet de alta calidad, reconocida por nuestra innovación, confiabilidad y compromiso con la satisfacción del cliente, impulsando la conectividad y el progreso en nuestra región."
     }
   ],
 
@@ -41,7 +41,7 @@
   "opinions": [
     {
       "foto": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg",
-      "opinion": "Desde que adquirí el servicio de internet de Atelco, he disfrutado de una excelente conexión y una atención al cliente impecable. ¡Felicidades por ser la mejor empresa!"
+      "opinion": "Desde que adquirí el servicio de internet de Meganet, he disfrutado de una excelente conexión y una atención al cliente impecable. ¡Felicidades por ser la mejor empresa!"
     },
     {
       "foto": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg",
@@ -49,16 +49,16 @@
     },
     {
       "foto": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg",
-      "opinion": "El servicio de internet de Atelco es excelente, tanto en calidad como en atención al cliente. ¡Felicitaciones por su gran trabajo!"
+      "opinion": "El servicio de internet de Meganet es excelente, tanto en calidad como en atención al cliente. ¡Felicitaciones por su gran trabajo!"
     },
     {
       "foto": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg",
-      "opinion": "Desde que contraté el internet de Atelco, todo ha sido perfecto: conexión estable y una atención al cliente de primera. ¡Definitivamente la mejor empresa!"
+      "opinion": "Desde que contraté el internet de Meganet, todo ha sido perfecto: conexión estable y una atención al cliente de primera. ¡Definitivamente la mejor empresa!"
     },
 
     {
       "foto": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg",
-      "opinion": "Atelco me ha brindado un servicio de internet excepcional, con una conexión estable y una atención al cliente de primer nivel. Sin duda, una empresa que destaca por su calidad y compromiso."
+      "opinion": "Meganet me ha brindado un servicio de internet excepcional, con una conexión estable y una atención al cliente de primer nivel. Sin duda, una empresa que destaca por su calidad y compromiso."
     }
   ]
 }

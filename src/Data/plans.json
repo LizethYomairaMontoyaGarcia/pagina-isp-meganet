@@ -8,7 +8,7 @@
       "price": "71.400",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva a estratos superiores a 3",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -20,7 +20,7 @@
       "price": "100.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva a estratos superiores a 3",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -32,7 +32,7 @@
       "price": "150.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva a estratos superiores a 3",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -46,7 +46,7 @@
       "price": "200.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva incluido",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -58,7 +58,7 @@
       "price": "300.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva incluido",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -70,7 +70,7 @@
       "price": "350.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva incluido",
         "item4": "Primer pago del mes se cancela por adelantado"
       }
@@ -82,9 +82,51 @@
       "price": "500.000",
       "items": {
         "item1": "Navegación Ilimitada",
-        "item2": "Instalación gratis",
+        "item2": "Instalación $150.000",
         "item3": "Iva incluido",
         "item4": "Primer pago del mes se cancela por adelantado"
+      }
+    }
+  ],
+  "dedicatedChannelNotInternet": [
+    {
+      "id": 1,
+      "plans": 20,
+      "price": "200.000",
+      "items": {
+        "item1": "Segun visita técnica"
+      }
+    },
+    {
+      "id": 2,
+      "plans": 30,
+      "price": "300.000",
+      "items": {
+        "item1": "Segun visita técnica"
+      }
+    },
+    {
+      "id": 3,
+      "plans": 50,
+      "price": "400.000",
+      "items": {
+        "item1": "Segun visita técnica"
+      }
+    },
+    {
+      "id": 4,
+      "plans": 80,
+      "price": "700.000",
+      "items": {
+        "item1": "Segun visita técnica"
+      }
+    },
+    {
+      "id": 5,
+      "plans": 100,
+      "price": "900.000",
+      "items": {
+        "item1": "Segun visita técnica"
       }
     }
   ]

@@ -154,11 +154,11 @@ export const Divider = styled.div`
     color: var(--sixth-color);
   }
   h4 {
-    font-family: var(--font-family-container);
+    font-family: var(--primary-typography);
     color: var(--sixth-color);
   }
   p {
-    font-family: var(--font-family-container);
+    font-family: var(--primary-typography);
     color: var(--sixth-color);
   }
 `;
@@ -204,21 +204,15 @@ export const Conta = styled.div`
   align-items: center;
 `;
 
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 export const Section = styled.section`
-  text-align: center;
-  align-items: center;
-  width: 95%;
+
+  width: 90%;
   margin: 30px auto;
   background-color: #0681e5b1;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(5, 82, 209);
-
-  @media (min-width: 768px) {
-    width: 80%;
-    padding: 40px;
-  }
 `;
 
 export const StyledCard = styled(Card)`
@@ -245,7 +239,7 @@ export const StyledCard = styled(Card)`
   }
 
   .card-title {
-    font-family: var(--font-family-container);
+    font-family: var(--primary-typography);
     font-size: 1.6rem;
   }
 
@@ -256,17 +250,24 @@ export const StyledCard = styled(Card)`
 
 export const HeaderCards = styled.div`
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 export const Title = styled.h1`
-  font-family: var(--font-family-container);
+  font-family: var(--primary-typography);
   color: var(--fifth-color);
 `;
 
 export const Subtitle = styled.h2`
   font-size: 20px;
-  color: var(--fifth-color);
+  color: var(--sixth-color);
+  font-family: var(--primary-typography);
+`;
+
+export const Subtitle2 = styled.h2`
+  font-size: 18px;
+  color: var(--sixth-color);
+  font-family: var(--primary-typography);
 `;
 
 export const CardList = styled.ul`
@@ -280,45 +281,81 @@ export const CardList = styled.ul`
 //////////////////////////////////////////////////////////////
 
 export const DivServices = styled.div`
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-`;
-
-const puls = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-`;
-
-export const ButtonClick = styled.button`
-  border-radius: 20px;
-  display: inline-block;
-  padding: 0.5rem 1.3rem;
-  background-color: var(--fifth-color);
-  border: 2px solid transparent;
-  color: var(--primary-color);
-  margin: 0 2px;
-  font-family: var(--font-family-container);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  animation: ${puls} 1.8s infinite;
-
-  &:hover {
-    background-color: var(--fifth-color);
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 100px;
 `;
 
 //////////////////////////////////////////////////////
+
+export const DivAccordion = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  h1 {
+    font-family: var(--primary-typography);
+    color: var(--secundary-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    color: var(--sixth-color);
+    font-family: var(--primary-typography);
+    text-align: center; /* Centrar el párrafo */
+    padding: 0 20px; /* Añadir padding para mejor visualización en móviles */
+    margin-bottom: 40px;
+  }
+
+  /* Estilos para los Accordions */
+  .accordion {
+    width: 100%; /* Asegurar que los Accordions ocupen todo el ancho disponible */
+    max-width: 700px; /* Limitar el ancho máximo para pantallas grandes */
+    margin-bottom: 20px; /* Espacio entre Accordions */
+    border-color: var(--secundary-color);
+  }
+
+  .accordion-item {
+    border: 1px solid #dee2e6; /* Añadir un borde para mejor visualización */
+    border-radius: 5px;
+    overflow: hidden; /* Asegurar que el contenido no se desborde */
+  }
+
+  .accordion-header {
+    background-color: #f8f9fa; /* Color de fondo para el header */
+    font-family: var(--primary-typography);
+  }
+
+  .accordion-body {
+    padding: 15px;
+  }
+
+  /* Estilos para la tabla dentro del Accordion */
+  .table {
+    width: 100%;
+    font-family: var(--primary-typography);
+  }
+
+  /* Media query para pantallas móviles */
+  @media screen and (max-width: 468px) {
+    p {
+      font-size: 16px; /* Reducir el tamaño de la fuente en móviles */
+    }
+
+    .accordion {
+      width: 100%; /* Asegurar que los Accordions ocupen todo el ancho disponible */
+      max-width: 400px; /* Limitar el ancho máximo para pantallas grandes */
+    }
+    .table {
+      font-size: 14px; /* Reducir el tamaño de la fuente de la tabla en móviles */
+    }
+  }
+`;

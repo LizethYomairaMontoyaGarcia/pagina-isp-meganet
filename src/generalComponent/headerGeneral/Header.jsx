@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HeaderWrapper, Container, Logo, Nav, MobileNav } from "./HeaderStyled";
-import logoIsp from "../../assets/img/atelcosas.avif";
+import logoIsp from "../../assets/img/meganet.avif";
 
 const Header = () => {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);

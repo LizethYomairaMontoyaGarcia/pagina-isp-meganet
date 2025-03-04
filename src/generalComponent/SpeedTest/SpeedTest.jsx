@@ -25,16 +25,18 @@ const SpeedTest = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Test | Atelco</title>
+        <title>Test | Meganet</title>
         <meta name="description" content="Test de velocidad" />
-        <link rel="canonical" href="https://atelco.net.co/test" />
+        <link rel="canonical" href="https://meganetfibrasas.net.co/test" />
       </Helmet>
       <Header />
 
       <ChatWhatsapp />
 
       <ContainerValores>
-        <h1>Recomendaciones para Un Test</h1>
+        <h1>
+          <strong>¿Cómo hacer un Test de velocidad?</strong>
+        </h1>
       </ContainerValores>
       <Div>
         <CardList>
@@ -42,8 +44,7 @@ const SpeedTest = () => {
             <CardHeader>
               <p>
                 Cierra todas las pestañas de tu navegador, excepto la del test.
-                <br /> Pausa las descargas e inactiva procesos en segundo plano,
-                como actualizaciones del sistema.
+                <br /> Pausa las descargas e inactiva procesos en segundo plano.
               </p>
             </CardHeader>
             <Figure>
@@ -57,13 +58,29 @@ const SpeedTest = () => {
             <CardHeader>
               <p>
                 Realiza una revisión y desconecta todos los dispositivos que
-                estén conectados a la red, incluyendo consolas, teléfono,
-                celulares, Smart TVs y cualquier otro dispositivo electrónico
-                que pueda estar consumiendo ancho de banda.
+                estén conectados a la red, incluyendo celulares, Smart TVs y
+                cualquier otro dispositivo electrónico que pueda estar
+                consumiendo ancho de banda.
               </p>
             </CardHeader>
             <Figure>
               <img src={Desconectar} alt="Respeto" />
+            </Figure>
+          </CardItem>
+        </CardList>
+
+        <CardList>
+          <CardItem>
+            <CardHeader>
+              <p>
+                Conecta solo un dispositivo a la red. Si estás utilizando una
+                PC, asegúrate de que esté conectada directamente al módem
+                mediante un cable Ethernet. La medición debe realizarse sobre el
+                servicio fijo, no a través de la red WiFi.
+              </p>
+            </CardHeader>
+            <Figure>
+              <img src={Compu} alt="Respeto" />
             </Figure>
           </CardItem>
         </CardList>
@@ -82,25 +99,13 @@ const SpeedTest = () => {
             </Figure>
           </CardItem>
         </CardList>
-        <CardList>
-          <CardItem>
-            <CardHeader>
-              <p>
-                Conecta solo un dispositivo a la red. Si estás utilizando una
-                PC, asegúrate de que esté conectada directamente al módem
-                mediante un cable Ethernet. La medición debe realizarse sobre el
-                servicio fijo, no a través de la red WiFi.
-              </p>
-            </CardHeader>
-            <Figure>
-              <img src={Compu} alt="Respeto" />
-            </Figure>
-          </CardItem>
-        </CardList>
       </Div>
 
       <CenteredContainer>
-        <h1>Realizar test de velocidad</h1>
+        <h1>
+          {" "}
+          <strong>Realizar test de velocidad</strong>
+        </h1>
         <CircleImageLink
           href="https://www.speedtest.net/"
           target="_blank"

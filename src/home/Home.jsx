@@ -70,9 +70,7 @@ const StyledCaption = styled(Carousel.Caption)`
   text-align: center;
 
   h3 {
-    font-weight: 580;
     font-size: 40px;
-    line-height: 48px;
     position: relative;
     z-index: 3;
     @media (max-width: 468px) {
@@ -125,8 +123,8 @@ export const Home = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Inicio | Atelco</title>
-        <link rel="canonical" href="https://atelco.net.co" />
+        <title>Inicio | Meganet</title>
+        <link rel="canonical" href="https://meganetfibrasas.net.co" />
         <meta name="description" content="Intenet alta velocidad" />
       </Helmet>
       <div>
@@ -254,19 +252,31 @@ export const Home = () => {
             <DivSpeedImg>
               <div>
                 <img src={Rapido} alt="rapido" />
-                <p>Servicio 24/7</p>
+                <p>
+                  {" "}
+                  <strong>Servicio 24/7</strong>
+                </p>
               </div>
               <div>
                 <img src={Nube} alt="nube" />
-                <p>Servicio Ilimitado</p>
+                <p>
+                  {" "}
+                  <strong>Servicio Ilimitad</strong>o
+                </p>
               </div>
               <div>
                 <img src={Contrato} alt="doc" />
-                <p>Sin cláusulas</p>
+                <p>
+                  {" "}
+                  <strong>Sin cláusulas</strong>{" "}
+                </p>
               </div>
               <div>
                 <img src={Herramienta} alt="mecanico" />
-                <p>Instalación rapida</p>
+                <p>
+                  {" "}
+                  <strong>Instalación rapida</strong>
+                </p>
               </div>
             </DivSpeedImg>
           </DivSpeed>

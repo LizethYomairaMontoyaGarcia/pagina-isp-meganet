@@ -3,30 +3,35 @@ import styled from "styled-components";
 export const Container = styled.div`
   text-align: center;
   width: 90%;
-  margin: 30px auto;
-  background-color: #0553d1bb;
-  padding: 20px;
-  border-radius: 10px ;
-  box-shadow: 0px 0px 15px rgba(5, 82, 209);
+  margin: 120px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #008542;
 
   h1 {
-    color: var(--room-color);
+    color: var(--secundary-color);
     margin-bottom: 20px;
     font-family: var(--font-family-container);
   }
   p {
-    color: var(--room-color);
-    padding: 0 30px;
-    margin-top: 20px;
-    font-size: 1.3rem;
+    color: var(--sixth-color);
+    padding: 0 25px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-family: var(--font-family-container);
   }
 
   img {
-    width: 170px;
+    width: 280px;
   }
 
   @media screen and (max-width: 468px) {
     height: auto;
+    padding: 10px;
+    p {
+      padding: 0 20px;
+      font-size: 1.1rem;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -39,10 +44,10 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 30px;
   margin-bottom: 50px;
 
-  @media screen and (max-width:  768px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -61,11 +66,11 @@ export const CardItemMisionVision = styled.li`
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
-  background: linear-gradient(135deg, #0553d187, #ffffff);
-  box-shadow: 0 20px 5px rgba(0, 0, 0, 0.053), 0 30px 10px rgba(0, 0, 0, 0.185);
+  background: linear-gradient(135deg, #00854360, #ffffff);
   transform-style: preserve-3d;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transform: perspective(1000px) translateZ(0);
+  border: 3px solid var(--room-color);
 
   &:hover {
     transform: perspective(1000px) translateZ(10px);
@@ -87,17 +92,15 @@ export const CardItemMisionVision = styled.li`
 
 export const CardContentMisionVision = styled.p`
   padding: 10px;
-  color: #333;
   font-size: 1.2rem;
   transform: translateZ(20px);
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 `;
 
 export const CardTitletMisionVision = styled.h2`
-  font-family: var(--font-family-container);
+  font-family: var(--primary-typography);
   transform: translateZ(30px);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 `;
 
@@ -107,7 +110,7 @@ export const FigureMisionVision = styled.figure`
   transition: transform 0.3s ease-in-out;
 
   img {
-    width: 90px;
+    width: 160px;
     transition: transform 0.3s ease-in-out;
     transform: translateZ(50px);
   }
@@ -119,12 +122,11 @@ export const ContainerValores = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
 
   h2 {
     font-family: var(--font-family-container);
     font-size: 2.5rem;
-    color: var(--third-color);
+    color: var(--secundary-color);
   }
 `;
 
@@ -140,7 +142,7 @@ export const CardList = styled.ul`
 export const CardItem = styled.li`
   width: calc(31% - 10px);
   margin: 10px;
-  border: 2px solid var(--third-color);
+  border: 4px solid var(--third-color);
   border-radius: 20px;
   overflow: hidden;
   text-align: center;

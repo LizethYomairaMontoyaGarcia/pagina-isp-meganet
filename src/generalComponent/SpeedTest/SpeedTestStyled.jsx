@@ -6,7 +6,11 @@ export const ContainerValores = styled.div`
   align-items: center;
   text-align: center;
   margin-top: 120px;
-  font-family: var(--font-family-container);
+
+  h1 {
+    font-family: var(--font-family-container);
+    color: var(--secundary-color);
+  }
 `;
 
 export const Div = styled.div`
@@ -27,11 +31,10 @@ export const CardList = styled.ul`
 export const CardItem = styled.li`
   width: 310px;
   margin: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 20px;
+  border: 4px solid var(    --secundary-color);
+  border-radius: 15px;
   text-align: center;
   background-color: white;
-  box-shadow: 0 15px 10px var(--third-color);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   @media (max-width: 768px) {
@@ -60,11 +63,10 @@ export const Figure = styled.figure`
 `;
 
 export const CardHeader = styled.header`
-  background-color: var(--third-color);
   padding: 10px;
   border-radius: 20px 20px 0 0;
   p {
-    color: var(--room-color);
+    color: var(--sixth-color);
     font-family: var(--font-family-container);
     font-size: 1rem;
     text-align: center;
@@ -79,10 +81,10 @@ export const CenteredContainer = styled.div`
   margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(5, 82, 209);
+  box-shadow: 0px 0px 20px #00A9E0;
 
   h1 {
-    color: var(--third-color);
+    color: var(--secundary-color);
   }
 `;
 

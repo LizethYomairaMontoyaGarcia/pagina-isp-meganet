@@ -35,12 +35,32 @@ const AboutUs = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Nosotros | Atelco</title>
+        <title>Nosotros | Meganet</title>
         <meta name="description" content="¿Quienes somos?" />
-        <link rel="canonical" href="https://atelco.net.co/nosotros" />
+        <link rel="canonical" href="https://meganetfibrasas.net.co/nosotros" />
       </Helmet>
       <Header />
       <ChatWhatsapp />
+
+      <Container>
+        <h1>
+          {" "}
+          <strong>¿Quienes somos?</strong>
+        </h1>
+        <p>
+          Meganet fibra tiene como objetivo principal el asesoramiento,
+          implementación, comercialización, distribución y mantenimiento de
+          servicios de internet y redes de intercomunicación, igual manera
+          subcontratación, instalación y control de servicios informáticos y
+          telecomunicación, como networking y banda ancha para todo tipo de
+          empresa. La empresa Meganet fibra tiene una trayectoria de mas de 7
+          años prestando el servicio a empresas y los hogares Tumaqueños,
+          satisfaciéndoles una necesidad básica como es el servicio de internet,
+          dentro de nuestra experiencia hemos tenido contrato con reconocidas
+          empresas y cooperaciones internacionales.
+        </p>
+        <img src={quienSomos} alt="quienSomos" />
+      </Container>
 
       <CardContainer>
         <CardListMisionVision>
@@ -74,18 +94,12 @@ const AboutUs = () => {
         </CardListMisionVision>
       </CardContainer>
 
-      <Container>
-        <h1>¿Quienes somos?</h1>
-        <p>
-          Somos una empresa que cree en la innovación constante, <br />
-          ofreciendo una experiencia de conectividad superior.
-        </p>
-        <img src={quienSomos} alt="quienSomos" />
-      </Container>
-
       {valuesData.values.map((valuesItem, index) => (
         <ContainerValores key={index}>
-          <h2> {valuesItem.title}</h2>
+          <h2>
+            {" "}
+            <strong>{valuesItem.title}</strong>{" "}
+          </h2>
           <CardList>
             <CardItem>
               <Figure>
