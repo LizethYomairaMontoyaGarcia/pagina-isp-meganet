@@ -316,7 +316,7 @@ export const Home = () => {
           <DivGeneral>
             <DivMpas>
               <iframe
-                src="https://www.google.com/maps/d/u/6/embed?mid=1TpVGfB6r12dIc9biIk3tuZnXT9MzC_Q&ehbc=2E312F"
+                src="https://www.google.com/maps/d/embed?mid=1Fwrl7JcZQkPrxfvSUQOyU1Buy3tojRw&ehbc=2E312F "
                 title="Google Maps"
               ></iframe>
             </DivMpas>
