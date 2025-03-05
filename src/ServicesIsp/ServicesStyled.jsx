@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import indexBackground from "../assets/img/condoto.avif";
+import indexBackground from "../assets/img/tumaco2.avif";
 import { Card } from "react-bootstrap";
 
 export const Container = styled.div`
@@ -25,7 +25,6 @@ export const Container = styled.div`
 
   h1,
   p,
-  h3,
   div {
     opacity: 0;
     transform: translateY(50px);
@@ -46,15 +45,6 @@ export const Container = styled.div`
   }
 
   p {
-    color: var(--fifth-color);
-    font-size: 20px;
-    padding: 0 100px;
-    margin-top: 20px;
-    z-index: 2;
-    font-family: var(--font-family-container);
-  }
-
-  h3 {
     color: var(--fifth-color);
     font-size: 20px;
     padding: 0 100px;
@@ -156,6 +146,7 @@ export const Divider = styled.div`
   h4 {
     font-family: var(--primary-typography);
     color: var(--sixth-color);
+    font-size:22px;
   }
   p {
     font-family: var(--primary-typography);
@@ -180,18 +171,18 @@ export const DivGeneralCard = styled.div`
 export const CardContainerCenter = styled.div`
   padding: 20px;
   background-color: var(--fifth-color);
-  border: 1px solid var(--third-color);
-  box-shadow: 0 2px 5px var(--third-color);
+  border: 3px solid var( --secundary-color);
+  box-shadow: 0 2px 5px var( --secundary-color);
   color: var(--fifth-color);
   text-align: center;
   border-radius: 20px;
   &:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
-    background-color: #0553d134;
+    background-color: #0553d129;
   }
   h2 {
-    color: var(--third-color);
+    color: var( --secundary-color);
   }
 `;
 
@@ -206,7 +197,6 @@ export const Conta = styled.div`
 
 /////////////////////////////////////////////////////////////////
 export const Section = styled.section`
-
   width: 90%;
   margin: 30px auto;
   background-color: #0681e5b1;

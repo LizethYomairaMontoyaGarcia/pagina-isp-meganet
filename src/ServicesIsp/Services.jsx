@@ -88,11 +88,7 @@ const Services = () => {
               LA CALIDAD ES NUESTRO SERVICIO
             </h1>
             <br />
-            <p>
-              Personaliza tu plan y disfruta de una conexión estable para hacer
-              lo que más te gusta. <br />
-              ¡Navega a toda velocidad!
-            </p>
+            <p>¡Navega a toda velocidad!</p>
 
             <Contaprincipal>
               <ButtonInfo
@@ -239,7 +235,8 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title>Punto físico</Card.Title>
                   <Card.Text>
-                    Calle del comercio con taguera, edificio Maja, segundo piso
+                    Calle Sucre con Taguera, Segundo piso Salsamentaria Merca Z
+                    Tumaco, Nariño
                   </Card.Text>
                   <ButtonGeneral
                     variant="primary"

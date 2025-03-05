@@ -19,16 +19,9 @@ export const DivServices = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 130px;
-  margin-bottom: 40px;
+  margin-top: 110px;
+  margin-bottom: 30px;
   padding: 0 20px;
-
-  h1 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    animation: ${h2Animation} 3s ease-in-out infinite;
-    color: var(--third-color);
-  }
 `;
 
 const cardAnimation = keyframes`
@@ -76,12 +69,12 @@ export const StyledCard = styled(Card)`
 export const CardBody = styled(Card.Body)`
   padding: 20px;
   background-color: #ffffff;
-  color: var(--fifth-color);
+  color: var(--sixth-color);
 `;
 
 export const CardTitle = styled(Card.Title)`
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--secundary-color);
   margin-bottom: 15px;
 `;

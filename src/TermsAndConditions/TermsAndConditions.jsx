@@ -16,9 +16,7 @@ const TermsAndConditions = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>
-          Términos y condiciones | Meganet
-        </title>
+        <title>Términos y condiciones | Meganet</title>
         <link
           rel="canonical"
           href="https://meganetfibrasas.net.co/TerminosyCondiciones"
@@ -29,20 +27,17 @@ const TermsAndConditions = () => {
       <ChatWhatsapp />
 
       <DivServices>
-        <h1>
-          Ninguno de nuestros servicios tiene cláusula <br /> de permanencia.
-        </h1>
-
         <StyledCard>
           <CardBody>
             <CardTitle>¿Cómo Unirte a Nosotros?</CardTitle>
             <Card.Text>
-              La instalación de nuestro servicio de internet no tiene costo. Sin
-              embargo, una vez realizada la instalación, deberá cancelar la
-              primera factura generada según el plan que haya elegido. Disfrutar
-              de todos nuestros beneficios, Para comenzar simplemente
-              necesitamos una fotocopia de la cédula de la persona que va ser
-              titular del servicio.
+              La instalación de nuestro servicio de internet tiene un costo de
+              <strong>
+                <em>$150.000.</em>
+              </strong>
+              <br />
+              Para comenzar simplemente necesitamos una fotocopia de la cédula
+              de la persona que va ser titular del servicio.
             </Card.Text>
             <br />
             <Card.Text>
@@ -54,15 +49,18 @@ const TermsAndConditions = () => {
           </CardBody>
         </StyledCard>
 
-        <ButtonGeneral
-          variant="primary"
-          onClick={() =>
-            (window.location.href =
-              "https://web.whatsapp.com/send?phone=3136162815&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
-          }
-        >
-          ¡Quiero contratar el servicio!
-        </ButtonGeneral>
+        <div>
+          <ButtonGeneral>Descargar contrato</ButtonGeneral>
+          <ButtonGeneral
+            variant="primary"
+            onClick={() =>
+              (window.location.href =
+                "https://web.whatsapp.com/send?phone=3136162815&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
+            }
+          >
+            ¡Quiero contratar el servicio!
+          </ButtonGeneral>
+        </div>
       </DivServices>
     </>
   );

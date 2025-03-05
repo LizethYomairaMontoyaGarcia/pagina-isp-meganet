@@ -283,7 +283,7 @@ export const Home = () => {
         </div>
 
         <Div>
-          <h1>¿Por qué los clientes nos prefieren?</h1>
+          <h1>Descubre por qué nuestros clientes nos prefieren.</h1>
           <CardGrid>
             {opinions.opinions.map((opinion, index) => (
               <CardItemCustomers key={index}>
@@ -294,7 +294,7 @@ export const Home = () => {
         </Div>
 
         <DivCoverageMaps>
-          <h1>¿Dónde estamos ubicados? </h1>
+          <h1>Conoce nuestra ubicación</h1>
 
           {coverageData.coverage.map((coverageItem, index) => (
             <Card

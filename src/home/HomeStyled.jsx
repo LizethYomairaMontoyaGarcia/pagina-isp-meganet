@@ -52,6 +52,7 @@ export const H1 = styled.h1`
   font-size: 30px;
   margin-top: 0;
   color: var(--secundary-color);
+  font-family: var(--font-family-container);
 
   @media (min-width: 768px) {
     font-size: 40px;
@@ -319,6 +320,7 @@ export const Div = styled.div`
   padding-right: 15px;
 
   h1 {
+    font-size: 35px;
     color: var(--secundary-color);
     font-family: var(--font-family-container);
   }
@@ -347,15 +349,15 @@ export const CardItemCustomers = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  border: 2px solid var(--third-color);
-  border-radius: 20px;
+  border: 4px solid var(--primary-color);
+  border-radius: 25px;
   background-color: white;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: perspective(900px) translateZ(10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 5px var(--primary-color);
   }
 `;
 
