@@ -9,7 +9,6 @@ import {
   Section,
   Title,
   Subtitle,
-  Subtitle2,
   CardList,
   HeaderCards,
   Conta,
@@ -105,7 +104,7 @@ const Services = () => {
           <div ref={internetSectionRef}>
             <Conta>
               <ButtonGeneral onClick={() => setPlanType("residentPlans")}>
-                strPlan Residencial
+                Plan Residencial
               </ButtonGeneral>
               <ButtonGeneral onClick={() => setPlanType("corporatePlan")}>
                 Plan Corporativo
@@ -203,7 +202,7 @@ const Services = () => {
                     <tbody>
                       {plansData.dedicatedChannelNotInternet.map((plan) => (
                         <tr key={plan.id}>
-                          <td>{plan.plans}</td>
+                          <td>{plan.plans}Mb</td>
                           <td>{plan.price} + Iva</td>
                           <td>{plan.items.item1}</td>
                         </tr>
@@ -220,13 +219,11 @@ const Services = () => {
               <Title>
                 <strong>Medios de pago</strong>
               </Title>
-              <Subtitle>No dejes pasar el pago de tu factura</Subtitle> <br />
-              <Subtitle2>
-                <em>
-                  La fecha límite para realizar el pago es el día 26 de cada
-                  mes.
-                </em>
-              </Subtitle2>
+              <Subtitle>
+                No dejes pasar el pago de tu factura.
+                <br />
+                La fecha límite para realizar el pago es el día 26 de cada mes.
+              </Subtitle>
             </HeaderCards>
 
             <CardList>

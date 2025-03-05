@@ -184,7 +184,7 @@ export const Cards = styled.header`
       font-size: 1.8rem;
     }
     @media (max-width: 480px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
   p {
@@ -266,8 +266,8 @@ export const CardItem = styled.li`
 
 export const CardHeader = styled.header`
   padding: 5px;
-  height: 70px;
-  margin-top: 40px;
+  height: 60px;
+  margin-top: 30px;
   margin-bottom: 8px;
   h1 {
     color: var(--room-color);

@@ -146,7 +146,7 @@ export const Divider = styled.div`
   h4 {
     font-family: var(--primary-typography);
     color: var(--sixth-color);
-    font-size:22px;
+    font-size: 22px;
   }
   p {
     font-family: var(--primary-typography);
@@ -171,8 +171,8 @@ export const DivGeneralCard = styled.div`
 export const CardContainerCenter = styled.div`
   padding: 20px;
   background-color: var(--fifth-color);
-  border: 3px solid var( --secundary-color);
-  box-shadow: 0 2px 5px var( --secundary-color);
+  border: 3px solid var(--secundary-color);
+  box-shadow: 0 2px 5px var(--secundary-color);
   color: var(--fifth-color);
   text-align: center;
   border-radius: 20px;
@@ -182,7 +182,7 @@ export const CardContainerCenter = styled.div`
     background-color: #0553d129;
   }
   h2 {
-    color: var( --secundary-color);
+    color: var(--secundary-color);
   }
 `;
 
@@ -208,7 +208,7 @@ export const Section = styled.section`
 export const StyledCard = styled(Card)`
   text-align: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 10px;
   background: linear-gradient(145deg, #ffffffc1, #f0f0f06b);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.676), 0 5px 15px rgba(0, 0, 0, 0.2),
@@ -236,8 +236,13 @@ export const StyledCard = styled(Card)`
   .card-text {
     font-size: 1rem;
   }
-`;
 
+  /* Ajuste para pantallas pequeñas */
+  @media screen and (max-width: 468px) {
+    width: 90%; /* O un porcentaje adecuado para tu diseño */
+    max-width: 20rem; /* Mantén el ancho máximo para evitar que se estiren demasiado */
+  }
+`;
 export const HeaderCards = styled.div`
   text-align: center;
   margin-bottom: 30px;
@@ -252,22 +257,19 @@ export const Subtitle = styled.h2`
   font-size: 20px;
   color: var(--sixth-color);
   font-family: var(--primary-typography);
-`;
-
-export const Subtitle2 = styled.h2`
-  font-size: 18px;
-  color: var(--sixth-color);
-  font-family: var(--primary-typography);
+  @media screen and (max-width: 468px) {
+    font-size: 16px;
+  }
 `;
 
 export const CardList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   list-style-type: none;
   gap: 30px;
+  padding: 0 10px; /* Añade un poco de padding para evitar que las tarjetas toquen los bordes */
 `;
-
 //////////////////////////////////////////////////////////////
 
 export const DivServices = styled.div`
@@ -339,10 +341,12 @@ export const DivAccordion = styled.div`
     p {
       font-size: 16px; /* Reducir el tamaño de la fuente en móviles */
     }
-
+    h1 {
+      font-size: 20px; /* Reducir el tamaño de la fuente en móviles */
+    }
     .accordion {
       width: 100%; /* Asegurar que los Accordions ocupen todo el ancho disponible */
-      max-width: 400px; /* Limitar el ancho máximo para pantallas grandes */
+      max-width: 360px; /* Limitar el ancho máximo para pantallas grandes */
     }
     .table {
       font-size: 14px; /* Reducir el tamaño de la fuente de la tabla en móviles */

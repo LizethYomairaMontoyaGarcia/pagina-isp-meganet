@@ -25,7 +25,7 @@ export const TextWrapper = styled.div`
     padding-bottom: 30px;
     padding-left: 100px;
     padding-right: 100px;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-family: var(--font-family-container);
   }
   h3 {
@@ -39,6 +39,7 @@ export const TextWrapper = styled.div`
       padding-bottom: 10px;
     }
     p {
+      font-size: 16px;
       padding-bottom: 10px;
       padding-left: 25px;
       padding-right: 25px;
@@ -81,7 +82,7 @@ export const Image = styled.img`
   transition: transform 0.3s ease-in-out;
 
   @media screen and (max-width: 468px) {
-    max-width: 80%;
+    max-width: 95%;
     margin-bottom: 5px;
   }
 
@@ -99,6 +100,9 @@ export const DivStyledContainer = styled.div`
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(5, 82, 209);
+  @media screen and (max-width: 468px) {
+    width: 93%;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -106,7 +110,7 @@ export const H2 = styled.h2`
   margin-top: 30px;
   color: var(--secundary-color);
   font-family: var(--font-family-container);
-  font-size: 2.3rem;
+  font-size: 23px;
 `;
 
 export const StyledContainer = styled.div`

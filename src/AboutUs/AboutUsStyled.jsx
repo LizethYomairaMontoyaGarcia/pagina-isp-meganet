@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   text-align: center;
   width: 90%;
-  margin: 120px auto;
+  max-width: 1200px; /* O un ancho máximo adecuado para tu diseño */
+  margin: 120px auto 50px auto; /* Centra horizontalmente y añade márgenes */
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #008542;
@@ -17,7 +18,7 @@ export const Container = styled.div`
     color: var(--sixth-color);
     padding: 0 25px;
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-family: var(--font-family-container);
   }
 
@@ -29,8 +30,8 @@ export const Container = styled.div`
     height: auto;
     padding: 10px;
     p {
-      padding: 0 20px;
-      font-size: 1.1rem;
+      padding: 0 10px;
+      font-size: 16px;
     }
   }
 
@@ -92,9 +93,13 @@ export const CardItemMisionVision = styled.li`
 
 export const CardContentMisionVision = styled.p`
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 19px;
   transform: translateZ(20px);
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  @media screen and (max-width: 468px) {
+    padding: 0 10px;
+    font-size: 16px;
+  }
 `;
 
 export const CardTitletMisionVision = styled.h2`
@@ -122,6 +127,7 @@ export const ContainerValores = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   h2 {
     font-family: var(--font-family-container);

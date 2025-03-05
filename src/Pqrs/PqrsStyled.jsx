@@ -9,7 +9,7 @@ export const FormContainer = styled.div`
   text-align: center;
   max-width: 900px;
   margin: auto;
-  margin-top: 130px;
+  margin-top: 120px;
   margin-bottom: 20px;
   h1 {
     color: var( --secundary-color);
@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
   }
 
   @media (max-width: 468px) {
-    max-width: 400px;
+    max-width:370px;
     p {
       margin-top: 20px;
       font-size: 16px;
