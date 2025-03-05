@@ -49,18 +49,15 @@ const TermsAndConditions = () => {
           </CardBody>
         </StyledCard>
 
-        <div>
-          <ButtonGeneral>Descargar contrato</ButtonGeneral>
-          <ButtonGeneral
-            variant="primary"
-            onClick={() =>
-              (window.location.href =
-                "https://web.whatsapp.com/send?phone=3136162815&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
-            }
-          >
-            ¡Quiero contratar el servicio!
-          </ButtonGeneral>
-        </div>
+        <ButtonGeneral
+          variant="primary"
+          onClick={() =>
+            (window.location.href =
+              "https://web.whatsapp.com/send?phone=3136162815&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
+          }
+        >
+          ¡Quiero contratar el servicio!
+        </ButtonGeneral>
       </DivServices>
     </>
   );
