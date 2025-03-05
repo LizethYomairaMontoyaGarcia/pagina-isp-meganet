@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
           variant="primary"
           onClick={() =>
             (window.location.href =
-              "https://web.whatsapp.com/send?phone=3136162815&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
+              "https://web.whatsapp.com/send?phone=3232888486&text=Hola,%20me%20interesa%20contratar%20el%20servicio%20con%20ustedes%20me%20pueden%20dar%20mas%20información%20gracias.")
           }
         >
           ¡Quiero contratar el servicio!
